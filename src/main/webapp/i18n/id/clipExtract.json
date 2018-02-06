@@ -1,0 +1,29 @@
+
+{
+    "kayhianMongoAccessApp": {
+        "clipExtract" : {
+            "home": {
+                "title": "Clip Extracts",
+                "createLabel": "Buat Clip Extract baru",
+                "createOrEditLabel": "Buat atau edit Clip Extract",
+                "search": "Cari Clip Extract"
+            },
+            "created": "Clip Extract dengan id {{ param }} telah dibuat",
+            "updated": "Clip Extract dengan id {{ param }} telah diperbaharui",
+            "deleted": "Clip Extract dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Clip Extract {{ id }}?"
+            },
+            "detail": {
+                "title": "Clip Extract"
+            },
+            "title": "Title",
+            "createddate": "Createddate",
+            "url": "Url",
+            "type": "Type",
+            "description": "Description",
+            "language": "Language",
+            "processstage": "Processstage"
+        }
+    }
+}

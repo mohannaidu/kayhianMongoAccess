@@ -1,0 +1,29 @@
+
+{
+    "kayhianMongoAccessApp": {
+        "clipExtract" : {
+            "home": {
+                "title": "Clip Extracts",
+                "createLabel": "Create a new Clip Extract",
+                "createOrEditLabel": "Create or edit a Clip Extract",
+                "search": "Search for Clip Extract"
+            },
+            "created": "A new Clip Extract is created with identifier {{ param }}",
+            "updated": "A Clip Extract is updated with identifier {{ param }}",
+            "deleted": "A Clip Extract is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Clip Extract {{ id }}?"
+            },
+            "detail": {
+                "title": "Clip Extract"
+            },
+            "title": "Title",
+            "createddate": "Createddate",
+            "url": "Url",
+            "type": "Type",
+            "description": "Description",
+            "language": "Language",
+            "processstage": "Processstage"
+        }
+    }
+}
