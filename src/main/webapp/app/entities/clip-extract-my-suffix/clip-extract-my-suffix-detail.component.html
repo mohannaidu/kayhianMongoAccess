@@ -1,0 +1,50 @@
+
+<div *ngIf="clipExtract">
+    <h2><span jhiTranslate="kayhianMongoAccessApp.clipExtract.detail.title">Clip Extract</span> {{clipExtract.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="kayhianMongoAccessApp.clipExtract.title">Title</span></dt>
+        <dd>
+            <span>{{clipExtract.title}}</span>
+        </dd>
+        <dt><span jhiTranslate="kayhianMongoAccessApp.clipExtract.createddate">Createddate</span></dt>
+        <dd>
+            <span>{{clipExtract.createddate | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="kayhianMongoAccessApp.clipExtract.url">Url</span></dt>
+        <dd>
+            <span>{{clipExtract.url}}</span>
+        </dd>
+        <dt><span jhiTranslate="kayhianMongoAccessApp.clipExtract.type">Type</span></dt>
+        <dd>
+            <span>{{clipExtract.type}}</span>
+        </dd>
+        <dt><span jhiTranslate="kayhianMongoAccessApp.clipExtract.description">Description</span></dt>
+        <dd>
+            <span>{{clipExtract.description}}</span>
+        </dd>
+        <dt><span jhiTranslate="kayhianMongoAccessApp.clipExtract.language">Language</span></dt>
+        <dd>
+            <span>{{clipExtract.language}}</span>
+        </dd>
+        <dt><span jhiTranslate="kayhianMongoAccessApp.clipExtract.processstage">Processstage</span></dt>
+        <dd>
+            <span>{{clipExtract.processstage}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'clip-extract-my-suffix/'+ clipExtract.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>
